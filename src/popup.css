@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  background-color: #222;
+}
+
+.actions {
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+button {
+  padding: 0.25rem 0.5rem;
+  color: #fff;
+  background-color: #333;
+  border: 2px solid #444;
+  border-radius: 5px;
+}
+
+.list {
+  max-height: 480px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow-y: auto;
+}
+
+.item {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #444;
+}
+
+.item > div {
+  width: 580px;
+  max-width: 580px;
+}
+
+.item.selected {
+  background-color: #444;
+  border-color: #333;
+}
+
+.total {
+  font-weight: 500;
+  height: 1.25rem;
+  min-width: 1.25rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background-color: #333;
+  margin-left: auto;
+  border: 2px solid #444;
+}
+
+.item > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.item img {
+  min-width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.item .title {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.item a {
+  color: #f88888;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
